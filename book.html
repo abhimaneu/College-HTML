@@ -18,7 +18,17 @@ Books
     <p align="right">
     <table cellpadding="20">
         <tr>
-            <td> Sort By : <select name="SortBy">
+            <td>
+                Filter By : <select name="FilterBy">
+                    <option value="Showall"> All </option>
+                    <option value="Read">Read</option>
+                    <option value="Notread">Not Read</option>
+                    <option value="Reading"> Reading </option>
+                    <option value="Show advanced" > show advanced filters </option>
+                </select>
+            </td>
+            <td> 
+                Sort By : <select name="SortBy">
                 <option value="Low_to_High">Price: Low to High</option>
                 <option value="High_to_Low">Price: High to Low</option>
                 <option value="Review">Review</option>
@@ -28,22 +38,72 @@ Books
     </p>
 <table  cellpadding="40">
 <tr>
+    <tr colspan="4">
+        <td> &nbsp </td>
+        <td colspan="4" align="center">
+            <form>
+                <fieldset>
+                    <legend> Add to Collection </legend>
+                    <br>
+                    <label for="name"> Name of Book: </label>
+                     <input type="text"> 
+                
+                    <label for="authors_name"> Authors Name: </label>
+                     <input type="text"> 
+                    
+                     <center align="right"> 
+                        <button title="Submit"> Add </button> 
+                    </center>
+                </fieldset>
+            </form>
+        </td>
+    </tr>
     <td>
-        <form>
-            <fieldset>
-                <legend> Add to Collection </legend>
-                <br>
-                <label for="name"> Name of Book: </label>
-                 <input type="text"> <br>
-                 <br>
-                <label for="authors_name"> Authors Name: </label>
-                 <input type="text"> <br>
-                 <br>
-                 <center align="right"> 
-                    <button title="Submit"> Add </button> 
-                </center>
-            </fieldset>
-        </form>
+        Genre: 
+        <br>
+        <ul>
+            <li>
+                <a href=" "> Crime and thrillers </a>
+            </li>
+            <li>
+                <a href=" "> Crime </a>
+            </li>
+            <li>
+                <a href=" "> Romance </a>
+            </li>
+            <li>
+                <a href=" "> Science Fiction </a>
+            </li>
+            <li>
+                <a href=" "> show more... </a>
+            </li>
+        </ul>
+        Languages:
+        <br>
+        <ul>
+            <li>
+                <a href=" "> English </a>
+            </li>
+            <li>
+                <a href=" "> Hindi </a>
+            </li>
+            <li>
+                <a href=" "> Marathi </a>
+            </li>
+            <li>
+                <a href=" "> Telugu </a>
+            </li>
+            <li>
+                <a href=" "> show more... </a>
+            </li>
+        </ul>
+        Marked as
+        <ul>
+        <li>
+            <input type="checkbox">
+            Read
+        </li>
+        </ul>
     </td>
 <td>
     <table>
